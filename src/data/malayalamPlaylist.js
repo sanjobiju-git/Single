@@ -1,0 +1,148 @@
+/**
+ * ==============================================================================
+ * MALAYALAM ROMANTIC SONGS PLAYLIST
+ * ==============================================================================
+ * You can easily link your own local .mp3 files by saving them in the `public/audio/`
+ * folder and updating the `audioFilePath` property for each song.
+ *
+ * Example:
+ * audioFilePath: "/audio/malare.mp3"
+ * ==============================================================================
+ */
+
+export const malayalamPlaylist = [
+  {
+    id: "mal-1",
+    title: "Malare",
+    artist: "Vijay Yesudas",
+    movie: "Premam",
+    duration: "4:15",
+    audioFilePath: "/audio/malare.mp3",
+    // Gentle melodic fallback so audio works instantly out of the box
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-111166.mp3",
+    year: "2015",
+    mood: "Soulful Romance",
+  },
+  {
+    id: "mal-2",
+    title: "Darshana",
+    artist: "Hesham Abdul Wahab & Darshana Rajendran",
+    movie: "Hridayam",
+    duration: "3:48",
+    audioFilePath: "/audio/darshana.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/10/14/audio_9939f792cb.mp3?filename=acoustic-guitar-love-123276.mp3",
+    year: "2022",
+    mood: "Heartwarming Melody",
+  },
+  {
+    id: "mal-3",
+    title: "Mizhiyil Ninnum",
+    artist: "Shahabaz Aman",
+    movie: "Mayaanadhi",
+    duration: "4:06",
+    audioFilePath: "/audio/mizhiyil-ninnum.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=sweet-piano-melody-20835.mp3",
+    year: "2017",
+    mood: "Deep Emotional Nostalgia",
+  },
+  {
+    id: "mal-4",
+    title: "Uyire",
+    artist: "Sid Sriram",
+    movie: "Gauthamante Radham",
+    duration: "3:52",
+    audioFilePath: "/audio/uyire.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/11/06/audio_c97693cf65.mp3?filename=relaxing-acoustic-guitar-124976.mp3",
+    year: "2020",
+    mood: "Breezy Love",
+  },
+  {
+    id: "mal-5",
+    title: "Pavizha Mazha",
+    artist: "K.S. Harisankar",
+    movie: "Athiran",
+    duration: "4:12",
+    audioFilePath: "/audio/pavizha-mazha.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=rainy-melody-110035.mp3",
+    year: "2019",
+    mood: "Rainy Day Romance",
+  },
+  {
+    id: "mal-6",
+    title: "Aaradhike",
+    artist: "Sooraj Santhosh & Madhuvanthi Narayan",
+    movie: "Ambili",
+    duration: "4:28",
+    audioFilePath: "/audio/aaradhike.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/05/16/audio_db5b8b9b8b.mp3?filename=peaceful-guitar-110756.mp3",
+    year: "2019",
+    mood: "Dreamy Stargazing",
+  },
+  {
+    id: "mal-7",
+    title: "Aaro Viral Neetti",
+    artist: "K.J. Yesudas",
+    movie: "Pranayavarnangal",
+    duration: "5:04",
+    audioFilePath: "/audio/aaro-viral-neetti.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/03/10/audio_c35048126b.mp3?filename=tender-feeling-piano-20412.mp3",
+    year: "1998",
+    mood: "Timeless Classic",
+  },
+  {
+    id: "mal-8",
+    title: "Ee Kaattu",
+    artist: "Karthik",
+    movie: "Adam Joan",
+    duration: "3:58",
+    audioFilePath: "/audio/ee-kaattu.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/08/02/audio_884fe92c21.mp3?filename=calm-acoustic-morning-116515.mp3",
+    year: "2017",
+    mood: "Gentle Breeze",
+  },
+  {
+    id: "mal-9",
+    title: "Alare",
+    artist: "Ayraan & Nithya Mammen",
+    movie: "Member Rameshan 9am Ward",
+    duration: "4:32",
+    audioFilePath: "/audio/alare.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2023/04/18/audio_6590203f7a.mp3?filename=tender-love-story-146312.mp3",
+    year: "2022",
+    mood: "Sweet Countryside Love",
+  },
+  {
+    id: "mal-10",
+    title: "Kanuvaan Thudangi",
+    artist: "Vineeth Sreenivasan",
+    movie: "Minnal Murali",
+    duration: "3:35",
+    audioFilePath: "/audio/kanuvaan-thudangi.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/02/10/audio_fc8627b949.mp3?filename=hopeful-acoustic-melody-110034.mp3",
+    year: "2021",
+    mood: "Playful Romance",
+  },
+  {
+    id: "mal-11",
+    title: "Kaathirunnu",
+    artist: "Shreya Ghoshal",
+    movie: "Ennu Ninte Moideen",
+    duration: "5:20",
+    audioFilePath: "/audio/kaathirunnu.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-111166.mp3",
+    year: "2015",
+    mood: "Eternal Love",
+  },
+  {
+    id: "mal-12",
+    title: "Neeyum Njaanum",
+    artist: "Neha Nair & Job Kurian",
+    movie: "Romantic Duets",
+    duration: "4:10",
+    audioFilePath: "/audio/neeyum-njaanum.mp3",
+    demoFallbackUrl: "https://cdn.pixabay.com/download/audio/2022/10/14/audio_9939f792cb.mp3?filename=acoustic-guitar-love-123276.mp3",
+    year: "2018",
+    mood: "Warm Acoustic Duet",
+  },
+];
+

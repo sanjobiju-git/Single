@@ -1,0 +1,57 @@
+.hero-landing {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #fdf2f5;
+  background-image: 
+    linear-gradient(to right, rgba(230, 190, 205, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(230, 190, 205, 0.35) 1px, transparent 1px);
+  background-size: 40px 40px;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+.hero-dodge-pill {
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2a101b;
+  background-color: #ffffff;
+  border: 1px solid rgba(230, 190, 205, 0.8);
+  border-radius: 9999px;
+  box-shadow: 0 4px 18px rgba(180, 100, 130, 0.08);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+}
+
+.hero-dodge-pill:hover {
+  box-shadow: 0 6px 24px rgba(180, 100, 130, 0.16);
+  transform: scale(1.02);
+}
+
+.hero-dodge-pill:active {
+  transform: scale(0.96);
+}
+
+.hero-dodge-pill--ready {
+  border-color: rgba(220, 140, 175, 0.9);
+  box-shadow: 0 0 0 4px rgba(230, 190, 205, 0.3), 0 8px 24px rgba(180, 100, 130, 0.15);
+  animation: heroPillGlow 2s infinite ease-in-out;
+}
+
+@keyframes heroPillGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(230, 190, 205, 0.5), 0 8px 20px rgba(180, 100, 130, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(230, 190, 205, 0), 0 12px 28px rgba(180, 100, 130, 0.2);
+  }
+}
+
