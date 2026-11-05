@@ -535,10 +535,9 @@
           <!-- Captions display -->
           <div class="circular-carousel__caption">
             <div class="circular-carousel__title text-[#2e102d] font-medium text-sm sm:text-base text-center"
-              id="carousel-caption-title">Milky
-              Way Glaciers <span class="text-[#5f305c] text-xs block font-normal mt-0.5">Nightscape Series</span></div>
+              id="carousel-caption-title">Family Moments <span class="text-[#5f305c] text-xs block font-normal mt-0.5">Cherished Memories</span></div>
             <div class="circular-carousel__count text-[#5f305c] text-xs font-mono">
-              <span id="carousel-active-index">07</span> / <span>10</span>
+              <span id="carousel-active-index">01</span> / <span>10</span>
             </div>
           </div>
           <!-- Carousel navigation arrow controls -->
@@ -867,6 +866,24 @@
   <script>
     // Initialize Lucide icons
     lucide.createIcons();
+
+    /* ============================================================= */
+    /* 3D COVERFLOW GALLERY CONFIGURATION                            */
+    /* Replace or edit photo paths, titles, and subtitles below.     */
+    /* All images reside in: /public/images/ (e.g., photo1.jpg)      */
+    /* ============================================================= */
+    window.COVERFLOW_GALLERY_CONFIG = [
+      { id: 1,  src: '/images/photo1.jpg',  title: 'Family Moments',     subtitle: 'Cherished Memories' },
+      { id: 2,  src: '/images/photo2.jpg',  title: 'The Inner Circle',   subtitle: 'Friendship & Laughter' },
+      { id: 3,  src: '/images/photo3.jpg',  title: 'Golden Hour Glow',   subtitle: 'Portrait Series' },
+      { id: 4,  src: '/images/photo4.jpg',  title: 'Campus Crew',        subtitle: 'College Days' },
+      { id: 5,  src: '/images/photo5.jpg',  title: 'Celebration Days',   subtitle: 'Special Occasions' },
+      { id: 6,  src: '/images/photo6.jpg',  title: 'Outdoor Adventures', subtitle: 'Wanderlust' },
+      { id: 7,  src: '/images/photo7.jpg',  title: 'Creative Sessions',  subtitle: 'Videography & Editing' },
+      { id: 8,  src: '/images/photo8.jpg',  title: 'Candid Smiles',      subtitle: 'Unfiltered Moments' },
+      { id: 9,  src: '/images/photo9.jpg',  title: 'Milestone Days',     subtitle: 'Memories to Keep' },
+      { id: 10, src: '/images/photo10.jpg', title: 'Life in Frames',     subtitle: 'Cherished Story' }
+    ];
 
     /* ------------------------------------------------------------- */
     /* 0. HERO ENTRY & PAGE NAVIGATION SYSTEM                        */
@@ -1736,18 +1753,20 @@
       const activeIndexElem = document.getElementById('carousel-active-index');
       if (!ring || !mount) return;
 
-      const items = [
-        { src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Misty Alpine Valley', subtitle: 'Landscape Series' },
-        { src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Studio Monolith Portrait', subtitle: 'Editorial Series' },
-        { src: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Geometric Towers', subtitle: 'Architecture Series' },
-        { src: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Tidal Swell Carving', subtitle: 'Oceanics Series' },
-        { src: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Angular Sky Facade', subtitle: 'Architecture Series' },
-        { src: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=900&q=80&auto=format&fit=max&sat=-100', title: 'High-Fashion Pose', subtitle: 'Editorial Series' },
-        { src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Milky Way Glaciers', subtitle: 'Nightscape Series' },
-        { src: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=900&q=80&auto=format&fit=max&sat=-100', title: 'City Street Contour', subtitle: 'Urban Series' },
-        { src: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Mirror Horizon Lake', subtitle: 'Landscape Series' },
-        { src: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=900&q=80&auto=format&fit=max&sat=-100', title: 'Steel Skyscraper Apex', subtitle: 'Architecture Series' }
-      ];
+      const items = (window.COVERFLOW_GALLERY_CONFIG && window.COVERFLOW_GALLERY_CONFIG.length > 0)
+        ? window.COVERFLOW_GALLERY_CONFIG
+        : [
+            { id: 1,  src: '/images/photo1.jpg',  title: 'Family Moments',     subtitle: 'Cherished Memories' },
+            { id: 2,  src: '/images/photo2.jpg',  title: 'The Inner Circle',   subtitle: 'Friendship & Laughter' },
+            { id: 3,  src: '/images/photo3.jpg',  title: 'Golden Hour Glow',   subtitle: 'Portrait Series' },
+            { id: 4,  src: '/images/photo4.jpg',  title: 'Campus Crew',        subtitle: 'College Days' },
+            { id: 5,  src: '/images/photo5.jpg',  title: 'Celebration Days',   subtitle: 'Special Occasions' },
+            { id: 6,  src: '/images/photo6.jpg',  title: 'Outdoor Adventures', subtitle: 'Wanderlust' },
+            { id: 7,  src: '/images/photo7.jpg',  title: 'Creative Sessions',  subtitle: 'Videography & Editing' },
+            { id: 8,  src: '/images/photo8.jpg',  title: 'Candid Smiles',      subtitle: 'Unfiltered Moments' },
+            { id: 9,  src: '/images/photo9.jpg',  title: 'Milestone Days',     subtitle: 'Memories to Keep' },
+            { id: 10, src: '/images/photo10.jpg', title: 'Life in Frames',     subtitle: 'Cherished Story' }
+          ];
 
       const count = items.length;
       const cardW = 230;
@@ -1776,12 +1795,12 @@
         card.style.transform = `rotateY(${baseAngle}deg) translateZ(${radius}px)`;
 
         card.innerHTML = `
-          <div class="circular-carousel__frame w-full h-full rounded-2xl overflow-hidden relative group">
-            <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" />
+          <div class="circular-carousel__frame w-full h-full rounded-2xl overflow-hidden relative group shadow-md border border-[#eddcc2]/50">
+            <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="eager" onerror="this.onerror=null; this.src='/images/photo1.jpg';" />
             <div class="circular-carousel__shade"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#2e102d]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
-              <span class="text-[#2e102d] text-xs font-semibold">${item.title}</span>
-              <span class="text-[#5f305c] text-[10px] font-mono">${item.subtitle}</span>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#2e102d]/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 pointer-events-none">
+              <span class="text-white text-xs font-semibold drop-shadow-sm">${item.title}</span>
+              <span class="text-[#f5ddf2] text-[10px] font-mono drop-shadow-sm">${item.subtitle}</span>
             </div>
           </div>
         `;
@@ -1794,7 +1813,10 @@
         ring.appendChild(card);
       });
 
+      let lastActiveIdx = -1;
       const updateActive = (idx) => {
+        if (idx === lastActiveIdx) return;
+        lastActiveIdx = idx;
         const item = items[idx];
         if (captionTitle && item) {
           captionTitle.innerHTML = `${item.title} <span class="text-[#5f305c] text-xs block font-normal mt-0.5">${item.subtitle}</span>`;
@@ -1803,6 +1825,9 @@
           activeIndexElem.textContent = String(idx + 1).padStart(2, '0');
         }
       };
+
+      // Set initial active card metadata immediately on load
+      updateActive(0);
 
       // Dragging Interaction
       mount.addEventListener('pointerdown', e => {
