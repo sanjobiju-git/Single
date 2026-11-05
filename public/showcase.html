@@ -434,7 +434,9 @@
           class="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full border border-[#eddcc2] bg-[#fff8fd] hover:bg-[#eddcc2]/30 text-xs font-semibold text-[#2e102d] transition shadow-sm active:scale-95 shrink-0"
           title="Back to Page 1">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
           <span class="text-xs">Page 1</span>
         </button>
         <span
@@ -480,7 +482,8 @@
 
       <!-- Bio Information Section Below Card -->
       <div class="mt-4 sm:mt-5 max-w-2xl mx-auto text-center px-4 space-y-1.5" style="text-wrap: balance;">
-        <p class="font-calligraphy text-lg sm:text-2xl md:text-3xl text-[#2e102d] leading-relaxed tracking-wide drop-shadow-sm">
+        <p
+          class="font-calligraphy text-lg sm:text-2xl md:text-3xl text-[#2e102d] leading-relaxed tracking-wide drop-shadow-sm">
           Computer Science &amp; Engineering student at Christ College of Engineering, Irinjalakuda.
         </p>
         <p class="font-calligraphy text-base sm:text-lg md:text-2xl text-[#7a2272] leading-relaxed tracking-wide">
@@ -535,7 +538,8 @@
           <!-- Captions display -->
           <div class="circular-carousel__caption">
             <div class="circular-carousel__title text-[#2e102d] font-medium text-sm sm:text-base text-center"
-              id="carousel-caption-title">Family Moments <span class="text-[#5f305c] text-xs block font-normal mt-0.5">Cherished Memories</span></div>
+              id="carousel-caption-title">Pappa &amp; Mummy <span
+                class="text-[#5f305c] text-xs block font-normal mt-0.5">Gift of God</span></div>
             <div class="circular-carousel__count text-[#5f305c] text-xs font-mono">
               <span id="carousel-active-index">01</span> / <span>10</span>
             </div>
@@ -873,16 +877,16 @@
     /* All images reside in: /public/images/ (e.g., photo1.jpg)      */
     /* ============================================================= */
     window.COVERFLOW_GALLERY_CONFIG = [
-      { id: 1,  src: '/images/photo1.jpg',  title: 'Family Moments',     subtitle: 'Cherished Memories' },
-      { id: 2,  src: '/images/photo2.jpg',  title: 'The Inner Circle',   subtitle: 'Friendship & Laughter' },
-      { id: 3,  src: '/images/photo3.jpg',  title: 'Golden Hour Glow',   subtitle: 'Portrait Series' },
-      { id: 4,  src: '/images/photo4.jpg',  title: 'Campus Crew',        subtitle: 'College Days' },
-      { id: 5,  src: '/images/photo5.jpg',  title: 'Celebration Days',   subtitle: 'Special Occasions' },
-      { id: 6,  src: '/images/photo6.jpg',  title: 'Outdoor Adventures', subtitle: 'Wanderlust' },
-      { id: 7,  src: '/images/photo7.jpg',  title: 'Creative Sessions',  subtitle: 'Videography & Editing' },
-      { id: 8,  src: '/images/photo8.jpg',  title: 'Candid Smiles',      subtitle: 'Unfiltered Moments' },
-      { id: 9,  src: '/images/photo9.jpg',  title: 'Milestone Days',     subtitle: 'Memories to Keep' },
-      { id: 10, src: '/images/photo10.jpg', title: 'Life in Frames',     subtitle: 'Cherished Story' }
+      { id: 1, src: '/images/photo1.jpg', title: 'Pappa & Mummy', subtitle: 'Gift of God' },
+      { id: 2, src: '/images/photo2.jpg', title: 'The Inner Circle', subtitle: 'Friendship & Laughter' },
+      { id: 3, src: '/images/photo3.jpg', title: 'Golden Hour Glow', subtitle: 'Portrait Series' },
+      { id: 4, src: '/images/photo4.jpg', title: 'Campus Crew', subtitle: 'College Days' },
+      { id: 5, src: '/images/photo5.jpg', title: 'Roots & Beginnings', subtitle: 'Childhood Nostalgia' },
+      { id: 6, src: '/images/photo6.jpg', title: 'Celebration Vibes', subtitle: 'Smiles & Sunshine' },
+      { id: 7, src: '/images/photo7.jpg', title: 'Traditional Day', subtitle: 'College Festivity' },
+      { id: 8, src: '/images/photo8.jpg', title: 'The New Spark', subtitle: 'Milestone Unboxing' },
+      { id: 9, src: '/images/photo9.jpg', title: 'Open Roads', subtitle: 'Rider Diaries' },
+      { id: 10, src: '/images/photo10.jpg', title: 'Life in Frames', subtitle: 'Cherished Story' }
     ];
 
     /* ------------------------------------------------------------- */
@@ -1756,17 +1760,17 @@
       const items = (window.COVERFLOW_GALLERY_CONFIG && window.COVERFLOW_GALLERY_CONFIG.length > 0)
         ? window.COVERFLOW_GALLERY_CONFIG
         : [
-            { id: 1,  src: '/images/photo1.jpg',  title: 'Family Moments',     subtitle: 'Cherished Memories' },
-            { id: 2,  src: '/images/photo2.jpg',  title: 'The Inner Circle',   subtitle: 'Friendship & Laughter' },
-            { id: 3,  src: '/images/photo3.jpg',  title: 'Golden Hour Glow',   subtitle: 'Portrait Series' },
-            { id: 4,  src: '/images/photo4.jpg',  title: 'Campus Crew',        subtitle: 'College Days' },
-            { id: 5,  src: '/images/photo5.jpg',  title: 'Celebration Days',   subtitle: 'Special Occasions' },
-            { id: 6,  src: '/images/photo6.jpg',  title: 'Outdoor Adventures', subtitle: 'Wanderlust' },
-            { id: 7,  src: '/images/photo7.jpg',  title: 'Creative Sessions',  subtitle: 'Videography & Editing' },
-            { id: 8,  src: '/images/photo8.jpg',  title: 'Candid Smiles',      subtitle: 'Unfiltered Moments' },
-            { id: 9,  src: '/images/photo9.jpg',  title: 'Milestone Days',     subtitle: 'Memories to Keep' },
-            { id: 10, src: '/images/photo10.jpg', title: 'Life in Frames',     subtitle: 'Cherished Story' }
-          ];
+          { id: 1, src: '/images/photo1.jpg', title: 'Family Moments', subtitle: 'Cherished Memories' },
+          { id: 2, src: '/images/photo2.jpg', title: 'The Inner Circle', subtitle: 'Friendship & Laughter' },
+          { id: 3, src: '/images/photo3.jpg', title: 'Golden Hour Glow', subtitle: 'Portrait Series' },
+          { id: 4, src: '/images/photo4.jpg', title: 'Campus Crew', subtitle: 'College Days' },
+          { id: 5, src: '/images/photo5.jpg', title: 'Celebration Days', subtitle: 'Special Occasions' },
+          { id: 6, src: '/images/photo6.jpg', title: 'Outdoor Adventures', subtitle: 'Wanderlust' },
+          { id: 7, src: '/images/photo7.jpg', title: 'Creative Sessions', subtitle: 'Videography & Editing' },
+          { id: 8, src: '/images/photo8.jpg', title: 'Candid Smiles', subtitle: 'Unfiltered Moments' },
+          { id: 9, src: '/images/photo9.jpg', title: 'Milestone Days', subtitle: 'Memories to Keep' },
+          { id: 10, src: '/images/photo10.jpg', title: 'Life in Frames', subtitle: 'Cherished Story' }
+        ];
 
       const count = items.length;
       const cardW = 230;
